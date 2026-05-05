@@ -1,21 +1,31 @@
 "use client";
 
 import { MapPin, Phone, Mail } from "lucide-react";
+import { useState } from "react";
+import Image from "next/image";
+import { X, ZoomIn } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-navy-dark pt-32">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-b from-navy to-navy-dark border-b border-gold/20">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif text-white mb-4">
-            Get In Touch
-          </h1>
-          <p className="text-cream/80 text-lg max-w-2xl mx-auto">
-            Have questions? We're here to help. Reach out to us through any of the contact methods below.
-          </p>
-        </div>
-      </div>
+    <>
+          {/* Header */}
+          <section className="relative py-20 px-4 md:px-8 overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80"
+              alt="Gallery header"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-[#091840]/85" />
+            <div className="relative max-w-7xl mx-auto">
+              <p className="text-[#c9a227] text-sm font-semibold uppercase tracking-widest mb-2">Campus Life</p>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Get In Touch</h1>
+              <p className="text-gray-300 max-w-2xl text-lg leading-relaxed">
+               Have questions? We're here to help. Reach out to us through any of the contact methods below.
+              </p>
+            </div>
+          </section>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
@@ -115,6 +125,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-    </div>
+    
+    </>
   );
 }

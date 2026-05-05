@@ -145,27 +145,35 @@ Farhada, Near Gatora Railway Station Road,
 
 {/* BOTTOM BAR */}
 <div className="border-t border-white/5 bg-black/20">
-  <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream/50">
+  <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-xs text-cream/50 text-center md:text-left">
     
-    <p>
+    {/* Left text */}
+    <p className="leading-relaxed">
       Affiliated to{" "}
-      <span className="text-cream/80">
+      <span className="text-cream/80 block md:inline">
         Atal Bihari Vajpayee Vishwavidyalaya
       </span>
-      <span className="mx-2">|</span>
-      College Code: <span className="text-cream/80">234</span>
+      <span className="hidden md:inline mx-2">|</span>
+      <span className="block md:inline">
+        College Code: <span className="text-cream/80">234</span>
+      </span>
     </p>
 
-    <p className="flex items-center gap-2 text-center">
-      © {new Date().getFullYear()} GTB College of Education. All Rights Reserved.
+    {/* Right text */}
+    <p className="flex flex-col md:flex-row items-center gap-1 md:gap-2 leading-relaxed">
+      <span>
+        © {new Date().getFullYear()} GTB College of Education. All Rights Reserved.
+      </span>
+
       <span className="hidden md:inline">|</span>
+
       <span>
         Developed by{" "}
         <a
           href="https://www.ezsofttech.in/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-cream/80 hover:text-white "
+          className="text-cream/80 hover:text-white"
         >
           EZ Soft Tech
         </a>
@@ -173,7 +181,6 @@ Farhada, Near Gatora Railway Station Road,
     </p>
 
   </div>
-</div>
-    </footer>
+</div>   </footer>
   );
 }

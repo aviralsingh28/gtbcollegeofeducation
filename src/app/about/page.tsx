@@ -67,23 +67,15 @@ export default function AboutPage() {
             <div className="prose prose-lg text-gray-600 font-sans mb-8">
               <p>
                 Chhattisgarh is a developing state rich in natural resources — iron ore, coal, bauxite, power, cement, and rice production. After the formation of the new state in 2001, demand for technical and professional education grew rapidly, but quality colleges remained scarce.
-              </p>
+              </p><br/>
               <p>
                 To address this gap and prevent students from migrating to other states for technical education, the Bilaspur Model Education Society established GTB College in 2007 with an exclusive focus on job-oriented computer courses.
-              </p>
+              </p><br/>
               <p>
                 The institution&apos;s mission: <strong className="text-navy font-semibold">not just educate, but impart knowledge</strong> — elevating the intellectual outlook of students and equipping them for the professional world.
               </p>
             </div>
-            <div className="flex items-center gap-4 p-6 bg-white border border-gray-200 rounded-sm shadow-sm">
-              <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-gold/30">
-                <Image src="/principal.jpg" alt="Principal" width={48} height={48} className="object-cover h-full" />
-              </div>
-              <div>
-                <p className="text-navy font-serif font-bold text-lg leading-none mb-1">Dr. G.S. Arora</p>
-                <p className="text-gold font-sans text-xs font-semibold uppercase tracking-wider"> Director, GTB College Bilaspur</p>
-              </div>
-            </div>
+            
           </div>
           <div className="relative h-96 lg:h-[600px] w-full">
             <Image
@@ -96,6 +88,65 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Director's Desk */}
+<section className="py-20 lg:py-32 px-4 md:px-8 bg-white border-t border-gray-100">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <span className="text-gold font-sans font-bold tracking-widest uppercase text-xs">
+        Leadership Message
+      </span>
+      <h2 className="font-serif text-4xl lg:text-5xl text-navy mt-4">
+        Director’s Desk
+      </h2>
+    </div>
+
+    {/* Content */}
+    <div className="bg-cream p-8 md:p-12 rounded-sm border border-gray-200 shadow-sm">
+      <div className="prose prose-lg max-w-none text-gray-700 font-sans leading-relaxed">
+
+        <p><strong>Dear Students,</strong></p>
+
+        <p className="italic text-navy">
+          “What is it that knowledge — like a wish-fulfilling tree — cannot achieve?”
+        </p>
+
+        <p>
+          Human beings are the finest creation of God, blessed with the unique ability to think and act consciously. This is what makes us superior to other living beings. How we utilize this power depends entirely on us. Greatness is not inherited by birth; it is achieved through continuous effort, discipline, and good actions.
+        </p>
+
+        <p>
+          Those who value time achieve their goals with clarity and ease, while those who fail to do so drift away from their aspirations. Time is invaluable — a truth we must always remember. Discipline leads to patience, and patience prevents chaos and haste.
+        </p>
+
+        <p>
+          Failure is not a crime; rather, it is the key to success. The real mistake lies in lowering one’s goals.
+        </p>
+
+        <p>
+          You must take pride in your family, your teachers, your institution, and your nation.
+        </p>
+
+        <p>
+          I assure you that <strong>G.T.B. College of Education</strong> remains committed to maintaining high standards of education and continuous development. I sincerely thank the parents, students, and the entire college family for their constant support in overcoming challenges and progressing toward our goals.
+        </p>
+
+        {/* Signature */}
+        <div className="mt-10 pt-6 border-t border-gray-300">
+          <p className="font-semibold text-navy">Dr. G. S. Arora</p>
+          <p className="text-sm text-gray-500">
+            President, Governing Body<br/>
+            G.T.B. College of Education
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* Vision & Mission */}
       <section className="py-20 lg:py-32 px-4 md:px-8 bg-white border-y border-gray-100">
@@ -192,62 +243,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Faculty Table */}
-      {/* <section className="py-20 lg:py-32 px-4 md:px-8 bg-navy relative" id="faculty"> */}
-        {/* <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-16 max-w-3xl mx-auto">
-            <span className="text-gold font-sans font-bold tracking-widest uppercase text-xs">Academic Staff</span>
-            <h2 className="font-serif text-4xl lg:text-5xl text-white mt-4">Our Faculty</h2>
-          </div> */}
-
-          {/* Cards */}
-          {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-16">
-            {faculty.map((f) => (
-              <div key={f.name} className="bg-white/5 rounded-sm overflow-hidden border border-white/10 hover:bg-white/10 transition-colors text-center group">
-                <div className="relative h-48 overflow-hidden">
-                  <Image src={f.img} alt={f.name} fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-serif text-white text-lg leading-tight mb-1">{f.name}</h3>
-                  <p className="font-sans text-gold text-xs font-bold uppercase tracking-wider mb-3">{f.role}</p>
-                  <p className="font-sans text-cream/60 text-xs">{f.qual}</p>
-                </div>
-              </div>
-            ))}
-          </div> */}
-
-          {/* Table */}
-          {/* <div className="overflow-x-auto rounded-sm border border-white/10 bg-navy-dark/50 backdrop-blur-sm">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-gold text-navy font-sans text-xs font-bold uppercase tracking-widest">
-                  {["S.No", "Name", "Designation", "Qualification", "Ph.D/NET/SLET", "Contact"].map((h) => (
-                    <th key={h} className="px-6 py-4 text-left whitespace-nowrap">{h}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/5 font-sans">
-                {faculty.map((f, i) => (
-                  <tr key={f.name} className="hover:bg-white/5 transition-colors">
-                    <td className="px-6 py-4 text-cream/50 text-sm">{i + 1}</td>
-                    <td className="px-6 py-4 text-white font-semibold text-sm whitespace-nowrap">{f.name}</td>
-                    <td className="px-6 py-4 text-cream/80 text-sm whitespace-nowrap">{f.role}</td>
-                    <td className="px-6 py-4 text-cream/70 text-sm">{f.qual}</td>
-                    <td className="px-6 py-4 text-sm">
-                      <span className={`px-3 py-1 rounded-sm text-xs font-bold uppercase tracking-wider ${f.phd !== "-" ? "bg-green-500/20 text-green-400" : "bg-white/10 text-cream/40"}`}>
-                        {f.phd}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-gold font-medium text-sm">{f.contact}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>*/}
-      {/* </section> */}
     </> 
   );
 }
