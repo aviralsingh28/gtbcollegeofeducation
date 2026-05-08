@@ -66,7 +66,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-6">
               <div className="relative h-16 w-44">
                 <Image
-                  src="/logo-1.png"
+                  src="/logo.png"
                   alt="GTB College Logo"
                   fill
                   sizes="176px"
@@ -90,10 +90,23 @@ Farhada, Near Gatora Railway Station Road,
                 </span>
               </div>
 
-              <a href="tel:07752299866" className="flex items-center gap-3 hover:text-gold">
-                <Phone size={18} className="text-gold" />
-                <span>07752 299866 / 72409 99909 / 74152 46253</span>
-              </a>
+<div className="flex items-center gap-2 text-sm md:text-base">
+  <Phone size={18} className="text-gold shrink-0" />
+
+  <div className="flex items-center gap-1">
+    <a href="tel:07752299866" className="hover:text-gold">
+      07752 299866
+    </a>
+    <span>/</span>
+    <a href="tel:7240999909" className="hover:text-gold">
+      72409 99909
+    </a>
+    <span>/</span>
+    <a href="tel:7415246253" className="hover:text-gold">
+      74152 46253
+    </a>
+  </div>
+</div>
 
               <a href="mailto:gtbcedu@gmail.com" className="flex items-center gap-3 hover:text-gold">
                 <Mail size={18} className="text-gold" />

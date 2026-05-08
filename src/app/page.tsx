@@ -443,6 +443,99 @@ useEffect(() => {
           </div>
         </div>
       </section>
+       {/* ── B.Ed FAQ Section (Timeline Style) ───────────────────────── */}
+<section className="py-24 px-4 md:px-8 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-serif text-navy mb-4">
+        B.Ed Program FAQs
+      </h2>
+      <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        Everything you need to know about the Bachelor of Education program.
+      </p>
+    </div>
+
+{/* Timeline Container */}
+<div className="relative pl-10 space-y-12">
+
+  {/* Vertical Line */}
+  <div className="absolute left-4 top-0 h-full w-[2px] bg-gold/40"></div>
+
+  {/* Item */}
+  {[
+    {
+      q: "What is the B.Ed program about?",
+      a: "The B.Ed program prepares students for a professional teaching career with strong foundations in pedagogy, classroom training, and subject expertise.",
+    },
+    {
+      q: "What is the duration and eligibility?",
+      a: "Duration is 2 years. Candidates must have completed graduation from a recognized university.",
+    },
+    {
+      q: "Is practical teaching included?",
+      a: "Yes, students undergo structured teaching practice with real classroom exposure, lesson planning, and teaching evaluations.",
+    },
+    {
+      q: "What kind of training is provided?",
+      a: "The program includes workshops, seminars, expert lectures, and skill development sessions to enhance modern teaching abilities.",
+    },
+  ].map((item, index) => (
+    <div key={index} className="relative">
+
+      {/* Perfectly Centered Dot */}
+      <div className="absolute left-4 top-2 -translate-x-1/2 w-4 h-4 bg-gold rounded-full border-4 border-white shadow"></div>
+
+      {/* Content */}
+      <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+        <h3 className="text-xl font-semibold text-navy mb-2">
+          {item.q}
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          {item.a}
+        </p>
+      </div>
+
+    </div>
+  ))}
+
+</div>
+
+    {/* Feature Cards */}
+    <div className="grid md:grid-cols-3 gap-6 mt-20">
+
+      <div className="bg-cream p-6 rounded-xl border border-gold/20 hover:shadow-lg transition">
+        <h4 className="text-lg font-bold text-navy mb-2">
+          Teaching Practice
+        </h4>
+        <p className="text-gray-600 text-sm">
+          Gain real classroom experience with lesson planning and evaluation.
+        </p>
+      </div>
+
+      <div className="bg-cream p-6 rounded-xl border border-gold/20 hover:shadow-lg transition">
+        <h4 className="text-lg font-bold text-navy mb-2">
+          Workshops & Seminars
+        </h4>
+        <p className="text-gray-600 text-sm">
+          Learn through expert sessions and modern teaching methodologies.
+        </p>
+      </div>
+
+      <div className="bg-cream p-6 rounded-xl border border-gold/20 hover:shadow-lg transition">
+        <h4 className="text-lg font-bold text-navy mb-2">
+          Career Growth
+        </h4>
+        <p className="text-gray-600 text-sm">
+          Build a strong foundation for a successful teaching career.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* ── Admission CTA ─────────────────────────────────── */}
       {/* <section className="py-24 px-4 md:px-8 bg-cream text-center overflow-hidden relative"> */}

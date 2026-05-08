@@ -63,7 +63,7 @@ export default function Navbar() {
 <Link href="/" className="flex items-center">
   <div className="relative h-14 w-36 md:h-16 md:w-44">
     <Image
-      src="/logo-1.png"
+      src="/logo.png"
       alt="GTB College Logo"
       fill
       sizes="(max-width: 768px) 144px, 176px"

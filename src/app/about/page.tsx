@@ -31,25 +31,24 @@ const faculty = [
 export default function AboutPage() {
   return (
     <>
-      {/* Header */}
-      <section className="relative py-24 md:py-32 px-4 md:px-8 overflow-hidden">
-        <Image
-          src="/collegephoto.png"
-          alt="GTB College"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-navy/85" />
-        <div className="absolute inset-0 border-b border-gold/20" />
-        <div className="relative max-w-7xl mx-auto pt-16 text-center">
-          <p className="text-gold text-sm font-sans font-bold uppercase tracking-widest mb-4">Our Story</p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6">About GTB College</h1>
-          <p className="text-cream/80 max-w-2xl mx-auto font-sans text-lg md:text-xl leading-relaxed font-light">
+                {/* Header */}
+                <section className="relative py-20 px-4 md:px-8 overflow-hidden">
+                  <Image
+                    src="/collegephoto.png"
+                    alt="Gallery header"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-[#091840]/85" />
+                  <div className="relative max-w-7xl mx-auto">
+                    <p className="text-[#c9a227] text-sm font-semibold uppercase tracking-widest mb-2">Our Story</p>
+                    <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">About GTB College</h1>
+                    <p className="text-gray-300 max-w-2xl text-lg leading-relaxed">
             Established in 2007, GTB College Bilaspur has been committed to delivering job-oriented technical education to the youth of Chhattisgarh.
-          </p>
-        </div>
-      </section>
+                    </p>
+                  </div>
+                </section>
 
       {/* Introduction */}
       <section className="py-20 lg:py-32 px-4 md:px-8 bg-cream">
@@ -217,6 +216,69 @@ export default function AboutPage() {
         </div>
       </section>
 
+             {/* ── B.Ed FAQ Section (Timeline Style) ───────────────────────── */}
+<section className="py-24 px-4 md:px-8 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-serif text-navy mb-4">
+        B.Ed Program FAQs
+      </h2>
+      <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        Everything you need to know about the Bachelor of Education program.
+      </p>
+    </div>
+
+{/* Timeline Container */}
+<div className="relative pl-10 space-y-12">
+
+  {/* Vertical Line */}
+  <div className="absolute left-4 top-0 h-full w-[2px] bg-gold/40"></div>
+
+  {/* Item */}
+  {[
+    {
+      q: "What is the B.Ed program about?",
+      a: "The B.Ed program prepares students for a professional teaching career with strong foundations in pedagogy, classroom training, and subject expertise.",
+    },
+    {
+      q: "What is the duration and eligibility?",
+      a: "Duration is 2 years. Candidates must have completed graduation from a recognized university.",
+    },
+    {
+      q: "Is practical teaching included?",
+      a: "Yes, students undergo structured teaching practice with real classroom exposure, lesson planning, and teaching evaluations.",
+    },
+    {
+      q: "What kind of training is provided?",
+      a: "The program includes workshops, seminars, expert lectures, and skill development sessions to enhance modern teaching abilities.",
+    },
+  ].map((item, index) => (
+    <div key={index} className="relative">
+
+      {/* Perfectly Centered Dot */}
+      <div className="absolute left-4 top-2 -translate-x-1/2 w-4 h-4 bg-gold rounded-full border-4 border-white shadow"></div>
+
+      {/* Content */}
+      <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+        <h3 className="text-xl font-semibold text-navy mb-2">
+          {item.q}
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          {item.a}
+        </p>
+      </div>
+
+    </div>
+  ))}
+
+</div>
+</div>
+</section>
+      
+
+
       {/* Management */}
       <section className="py-20 lg:py-32 px-4 md:px-8 bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto">
@@ -243,6 +305,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      
     </> 
   );
 }

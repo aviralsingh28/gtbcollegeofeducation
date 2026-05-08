@@ -67,7 +67,7 @@ export default function AdmissionsPage() {
               return (
                 <div key={c.code} className="border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#c9a227] flex items-center justify-center">
+                    <div className="w-11 h-11 rounded-xl border border-gray-700 flex items-center justify-center">
                       <Icon size={20} className="text-[#0f2557]" />
                     </div>
                     <div>
